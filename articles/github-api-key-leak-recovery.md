@@ -6,6 +6,8 @@ topics: ["security", "git", "github", "python", "dotenv"]
 published: true
 ---
 
+> **この記事で一言でわかること**: 「APIキー漏洩発覚から完全対処・再発防止完了までの全手順」
+
 # TL;DR
 
 1. **即座に**対象APIキーを無効化（数分以内）
@@ -158,6 +160,7 @@ X_ACCESS_TOKEN_SECRET=your_access_token_secret_here
 「自分はやらない」ではなく「やっても防げる仕組み」を作ることが個人開発のセキュリティの本質。
 
 > このシリーズでは、4サイト自動運用の全設計を無料で公開中。コード全文は最終回で案内する有料パック（note）に収録予定です。
+> noteでは構成・設計の裏側をより詳しく書いています → https://note.com/yoshi_ai_dev
 
 ---
 

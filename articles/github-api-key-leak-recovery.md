@@ -3,7 +3,7 @@ title: "GitHubにAPIキーをpushしてしまった時の完全対応手順 — 
 emoji: "🔑"
 type: "tech"
 topics: ["security", "git", "github", "python", "dotenv"]
-published: false
+published: true
 ---
 
 > **この記事で一言でわかること**: 「APIキー漏洩発覚から完全対処・再発防止完了までの全手順」

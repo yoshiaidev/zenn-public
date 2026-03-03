@@ -6,8 +6,6 @@ topics: ["googlesheets", "gas", "python", "automation", "ai"]
 published: false
 ---
 
-> **この記事で一言でわかること**: 「Google Sheets をハブにした AI記事の承認パイプラインの設計と実装」
-
 # なぜ承認フローが必要か
 
 Gemini API で記事を自動生成して直接 WordPress に投稿していた時期に起きた問題：

@@ -6,8 +6,6 @@ topics: ["python", "x", "twitter", "automation", "gemini"]
 published: false
 ---
 
-> **この記事で一言でわかること**: 「ペルソナ設定・投稿比率・承認フローの三層構造でX自動化を設計する方法」
-
 # 構成の全体像
 
 ```

@@ -6,8 +6,6 @@ topics: ["python", "gemini", "llm", "prompt", "automation"]
 published: false
 ---
 
-> **この記事で一言でわかること**: 「プロンプトに構成テンプレートを組み込むとLLMの出力の構造的ブレがなくなる」
-
 # 問題
 
 Gemini API で記事を量産していると、テーマが違うのに全記事が同じ構成になる現象が起きた。

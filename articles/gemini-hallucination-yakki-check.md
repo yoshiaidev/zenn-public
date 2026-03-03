@@ -6,8 +6,6 @@ topics: ["gemini", "python", "ai", "llm", "automation"]
 published: false
 ---
 
-> **この記事で一言でわかること**: 「LLMの幻覚・法令違反表現を本番環境で防ぐ自動チェックの実装パターン」
-
 # 背景
 
 CBD系のメディアサイトをGemini APIで記事自動生成している。ある日、生成された記事に以下の一文が混ざっていた。

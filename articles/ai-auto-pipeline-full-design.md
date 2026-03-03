@@ -6,8 +6,6 @@ topics: ["python", "gemini", "wordpress", "automation", "vps"]
 published: false
 ---
 
-> **この記事で一言でわかること**: 「4サイト自動運用パイプラインの設計思想とフォルダ構成の全体像」
-
 # はじめに
 
 非エンジニアのコンサルタントが、Gemini API × VPS × WordPress REST API を使って4サイトの記事・X投稿を自動化している。

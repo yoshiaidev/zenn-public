@@ -6,8 +6,6 @@ topics: ["security", "git", "github", "python", "dotenv"]
 published: true
 ---
 
-> **この記事で一言でわかること**: 「APIキー漏洩発覚から完全対処・再発防止完了までの全手順」
-
 # TL;DR
 
 1. **即座に**対象APIキーを無効化（数分以内）

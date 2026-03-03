@@ -6,8 +6,6 @@ topics: ["python", "gemini", "imagen", "wordpress", "automation"]
 published: false
 ---
 
-> **この記事で一言でわかること**: 「Gemini（設計）→ Imagen 3（背景生成）→ Pillow（テキスト合成）→ WP REST API（設定）の4段パイプラインでアイキャッチを自動化する」
-
 # 構成
 
 ```

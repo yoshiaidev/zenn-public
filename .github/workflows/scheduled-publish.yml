@@ -1,0 +1,69 @@
+name: Scheduled Article Publish
+
+on:
+  schedule:
+    # JST 21:00 = UTC 12:00
+    - cron: '0 12 2 3 *'    # 3/2  → Zenn #7
+    - cron: '0 12 4 3 *'    # 3/4  → Zenn #4
+    - cron: '0 12 6 3 *'    # 3/6  → Zenn #6
+    - cron: '0 12 8 3 *'    # 3/8  → Zenn #8
+    - cron: '0 12 10 3 *'   # 3/10 → Zenn #9
+  workflow_dispatch:
+    inputs:
+      article_slug:
+        description: '公開するslug（例: x-auto-post-persona-design）'
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Determine article to publish
+        id: target
+        run: |
+          DAY=$(date -u '+%d')
+          MONTH=$(date -u '+%m')
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "slug=${{ inputs.article_slug }}" >> $GITHUB_OUTPUT
+          elif [ "$MONTH" = "03" ] && [ "$DAY" = "02" ]; then
+            echo "slug=x-auto-post-persona-design" >> $GITHUB_OUTPUT
+          elif [ "$MONTH" = "03" ] && [ "$DAY" = "04" ]; then
+            echo "slug=google-sheets-approval-pipeline" >> $GITHUB_OUTPUT
+          elif [ "$MONTH" = "03" ] && [ "$DAY" = "06" ]; then
+            echo "slug=article-template-16-patterns" >> $GITHUB_OUTPUT
+          elif [ "$MONTH" = "03" ] && [ "$DAY" = "08" ]; then
+            echo "slug=eyecatch-auto-generation-pipeline" >> $GITHUB_OUTPUT
+          elif [ "$MONTH" = "03" ] && [ "$DAY" = "10" ]; then
+            echo "slug=ai-auto-media-3months-report" >> $GITHUB_OUTPUT
+          else
+            echo "slug=" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Publish article
+        if: steps.target.outputs.slug != ''
+        run: |
+          SLUG="${{ steps.target.outputs.slug }}"
+          FILE="articles/${SLUG}.md"
+
+          if [ ! -f "$FILE" ]; then
+            echo "File not found: $FILE"
+            exit 1
+          fi
+
+          sed -i 's/^published: false$/published: true/' "$FILE"
+
+          if git diff --quiet "$FILE"; then
+            echo "Already published: $FILE"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add "$FILE"
+            git commit -m "publish: ${SLUG}"
+            git push
+            echo "Published: $FILE"
+          fi

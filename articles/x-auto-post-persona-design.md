@@ -114,6 +114,7 @@ Twitterの投稿文だけを出力してください。
 
 ```json
 // config/posting_schedule.json
+// サイト名: cbd=健康系, match_lab=マッチングアプリ, seiketsu=スキンケア, dmm=エンタメ
 {
   "cbd": {
     "times": ["07:30", "12:15", "19:30", "22:00"]

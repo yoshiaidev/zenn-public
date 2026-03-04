@@ -55,6 +55,7 @@ def generate_eyecatch_design(title: str, content_excerpt: str,
 ## ブランド設定の例
 
 ```python
+# サイト別ブランド設定（4サイト運用中: cbd=健康系, seiketsu=スキンケア, match_lab=マッチングアプリ, dmm=エンタメ）
 BRAND_CONFIGS = {
     'seiketsu': {
         'main_color': '#2196F3',

@@ -1,5 +1,5 @@
 ---
-title: "Gemini APIが「某ハーバード大学の研究では」と書いた。架空出典の検出と薬機法チェックの実装"
+title: "Gemini APIが架空の論文を書いた。架空出典検出と薬機法チェックの実装"
 emoji: "⚠️"
 type: "tech"
 topics: ["gemini", "python", "ai", "llm", "automation"]

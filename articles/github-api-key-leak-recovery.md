@@ -1,5 +1,5 @@
 ---
-title: "GitHubにAPIキーをpushしてしまった時の完全対応手順 — BFG・全キー再発行・再発防止まで"
+title: "GitHubにAPIキーをpushしてしまった時の完全対応手順"
 emoji: "🔑"
 type: "tech"
 topics: ["security", "git", "github", "python", "dotenv"]

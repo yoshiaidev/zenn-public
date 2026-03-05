@@ -1,5 +1,5 @@
 ---
-title: "4アカウント×1日4投稿を自動化した設計図 — ペルソナ・投稿比率・承認フローの全構成"
+title: "4アカウント×1日4投稿を自動化した設計図"
 emoji: "🐦"
 type: "tech"
 topics: ["python", "x", "twitter", "automation", "gemini"]

@@ -1,5 +1,5 @@
 ---
-title: "AIへの指示を16パターンに分類したら記事がブレなくなった — テンプレートシステムの設計と実装"
+title: "AIへの指示を16パターンに分類したら記事がブレなくなった"
 emoji: "📝"
 type: "tech"
 topics: ["python", "gemini", "llm", "prompt", "automation"]

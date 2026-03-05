@@ -1,5 +1,5 @@
 ---
-title: "Google Sheets × GAS で AI記事の承認パイプラインを作る — ステータス遷移設計から実装まで"
+title: "Google Sheets × GAS で AI記事の承認パイプラインを作る"
 emoji: "📋"
 type: "tech"
 topics: ["googlesheets", "gas", "python", "automation", "ai"]

@@ -1,5 +1,5 @@
 ---
-title: "Canvaを開かずにアイキャッチを量産する — Gemini + Imagen 3 + Pillow + WordPress REST APIの自動生成パイプライン"
+title: "Canvaを使わずアイキャッチを量産する — Imagen 3 + Pillow + WordPress API"
 emoji: "🖼️"
 type: "tech"
 topics: ["python", "gemini", "imagen", "wordpress", "automation"]

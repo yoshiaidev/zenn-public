@@ -1,5 +1,5 @@
 ---
-title: "AI自動運用3ヶ月の実績レポート — KPI設計・コスト・稼働率・失敗ログの全公開"
+title: "AI自動運用3ヶ月レポート — KPI・コスト・稼働率・失敗ログを全公開"
 emoji: "📊"
 type: "idea"
 topics: ["python", "automation", "wordpress", "gemini", "seo"]

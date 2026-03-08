@@ -3,7 +3,7 @@ title: "Canvaを使わずアイキャッチを量産する — Imagen 3 + Pillow
 emoji: "🖼️"
 type: "tech"
 topics: ["python", "gemini", "imagen", "wordpress", "automation"]
-published: false
+published: true
 ---
 
 # 構成
